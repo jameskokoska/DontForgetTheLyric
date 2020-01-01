@@ -1,0 +1,94 @@
+<!
+~~~~~~~~~~~~~~~~~~INSTRUCTIONS~~~~~~~~~~~~~~~~~~
+For this page, replace the following values indicated below (avoid find and replace for LyricsPage):
+Song3Name - the name of the first song in genre 2
+LyricsPage1 - the first missing lyrics page (around 8 lines, separate lines with return (regular 'enter' button on keyboard))
+LyricsPage2 - the second missing lyrics page (around 8 lines, separate lines with return (regular 'enter' button on keyboard))
+LyricsPage3 - the third missing lyrics page (around 8 lines, separate lines with return (regular 'enter' button on keyboard))
+LyricsPage4 - the fourth missing lyrics page (around 8 lines, separate lines with return (regular 'enter' button on keyboard))
+LyricsPage5 - the fifth page, here it should be the amount of words missing and blanks (e.g. 4 Words \n ___ ______ _ ______)
+LyricsPage6 - the sixth page, here the missing lyrics should be revealed (e.g. The Missing 4 Lyrics)
+~~~~~~~~~~~~~~~~~~~~~NOTES~~~~~~~~~~~~~~~~~~~~~~
+This page is the lyrics page for each song
+One does NOT have to use each lyric page, e.g. the missing lyrics can go on page 3 however the amount of pages cannot exceed 4 pages 
+unless you add the necessary code below
+One needs to cut each song with the artist not singing the missing words, the file must be mp3!
+Rename the song respectively to the name of this file (e.g. 'song11.html' goes to 'song11.mp3') and put it in the assets folder
+The format is as follows e.g. song13.mp3 
+	the '1' represents the genre number
+	the '3' represents the song number of the genre
+>
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Song 1</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+<body class = "gradient">
+	<div class="container">
+		<div class="zoomInUp"><div class = "songTitleScroll"><h1>
+		
+		
+
+		
+		
+		</h1></div></div>
+		<pre><div class="center"><div class="zoomIn"><scroll-container><scroll-page id="page-1">
+
+		
+
+
+
+</scroll-page><scroll-page id="page-2">
+
+
+
+
+
+</scroll-page><scroll-page id="page-3">
+
+
+
+
+
+</scroll-page><scroll-page id="page-4">
+
+
+
+	
+	
+</scroll-page><scroll-page id="page-5">
+
+
+0 Words
+
+
+
+</scroll-page><scroll-page id="page-6">
+
+
+
+
+
+</scroll-page>
+		</div></div></pre></scroll-container>
+	</div>
+	<audio controls autoplay>
+	<source src="assets/song21.mp3" type="audio/mpeg">
+	</audio>
+	<div class="scrollMenu">
+		<a href="#page-1">1</a>
+		<a href="#page-2">2</a>
+		<a href="#page-3">3</a>
+		<a href="#page-4">4</a>
+		<a href="#page-5">5</a>
+		<a href="#page-6">6</a>
+	</div>
+	<a href="indexDefault.html"><img src="assets/back.png" width="5%" height="auto" align="left" class="back"/></a>
+	<div class="blank">
+		<p><font color="red"><u><b>WARNING: IT SEEMS YOU ARE ON AN UNSUPPORTED BROWSER, IN ORDER TO HAVE THE BEST EXPERIENCE READ BELOW:</b><p>
+		<p>Best experienced in Google Chrome And Firefox in a large 4:3 ratio, maximized, window. Unexpected results in Internet Explorer.</font></u></p>
+	</div>
+</body>
+</html>
