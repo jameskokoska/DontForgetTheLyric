@@ -5,453 +5,73 @@ Do not touch this file
 Cascading styles sheet for the application, credit given with website links when outside resources used
 */
 
-.animateInMain {
-    -webkit-animation: fadeIn 1s ease-in;
+a{
+  text-decoration: none;
 }
-.animateIn {
-    -webkit-animation: fadeIn 0.5s ease-in;
-}
-
-/*https://www.gradient-animator.com/*/
-@-webkit-keyframes gradientBackground {
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
-}
-.gradient{
-	background: linear-gradient(216deg, #1f476b, #232a78, #2f4360, #2a3039, #1d54d1, #196dba, #3d33a2, #409a85, #3a984d, #1b6671, #2b4a57);
-	background-size: 260000% 260000%;
-	-webkit-animation: gradientBackground 200s ease infinite;
-}
-
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 
 body {
-	overflow: hidden;
 	font-family: Helvetica; 
-	color: white;
-    background-repeat: repeat;
-	background-image:url("assets/background.png");
-	background-size: 110%;
-	}
-	
-.title {
-	background-image:assets/title.png;
-	height: 100%; 
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin: 0;
 }
 
-//animations from https://raw.githubusercontent.com/daneden/animate.css/master/animate.css
--webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-.pulse {
-  -webkit-animation: pulse ease-in;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-duration: 2000ms;
-}
-
-@-webkit-keyframes fadeaway { from { opacity:1; } to { opacity:0; } }
-.fadeOutMain{
-	-webkit-animation: fadeaway ease-in;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-delay: 3s;
-}
-
--webkit-keyframes fadeInFront {
-  from {
-    opacity: 0;
-  }
-  75% {
-	opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeInFront {
-  from {
-    opacity: 0;
-  }
-  75% {
-	opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.fadeInFront {
-	-webkit-animation: fadeInFront ease-in;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-duration: 4s;
-}//zoom in up from http://www.theappguruz.com/tag-tools/web/CSSAnimations/
-  @-webkit-keyframes zoomInUp {
-  0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-  transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
-  60% {
-  opacity: 1;
-  -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-  transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-  }
-  }
-  @keyframes zoomInUp {
-  0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-  transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
-  60% {
-  opacity: 1;
-  -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-  transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-  }
-  } 
-
-.zoomInUp {
-	-webkit-animation: zoomInUp ease-in;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-duration: 2s;
-}
-
-  @-webkit-keyframes zoomIn {
-  0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
-  }
-  50% {
-  opacity: 1;
-  }
-  }
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-delay: 2s;
-  }
-  
-  
-  
-.genreBox {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.genreBox:hover, .genreBox:focus, .genreBox:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-//------------------------------
-
-.container {
-    position: relative;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-.genreBox {
-    height: 70px;
-    width: 100%;
-    text-align: center;
-    font-size: 250%;
-    color: white;
-	text-shadow: 2px 2px 5px black;
-	-webkit-border-radius: 10px 10px 10px 10px;
-    border: 2px solid #000000;
-    padding-top: 20px;
-}
-.genreBox.b1{
-	background-color: #54bb35
-}
-.genreBox.b2{
-	background-color: orange;
-}
-.genreBox.b3{
-	background-color: #fb0b7b;
-}
-.genreBox.b4{
-	background-color: #0f232b;
-}
-.genreBox.b5{
-	background-color: #5463c7
-}
-.genreBox.b6{
-	background-color: #f14131;
-}
-.genreBox.b7{
-	background-color: #e5e420;
-}
-.genreBox.b8{
-	background-color: #c312d9;
-}
-.genreBoxIn{
-	-webkit-animation-name: zoomIn;
-	-webkit-animation-duration: 0.8s;
-	-webkit-animation-fill-mode: both;
-}
-.genreBoxIn.b1{
-	-webkit-animation-delay: 4s;
-}
-.genreBoxIn.b2{
-	-webkit-animation-delay: 5s;
-}
-.genreBoxIn.b3{
-	-webkit-animation-delay: 6s;
-}
-.genreBoxIn.b4{
-	-webkit-animation-delay: 7s;
-}
-.genreBoxIn.b5{
-	-webkit-animation-delay: 8s;
-}
-.genreBoxIn.b6{
-	-webkit-animation-delay: 9s;
-}
-.genreBoxIn.b7{
-	-webkit-animation-delay: 10s;
-}
-.genreBoxIn.b8{
-	-webkit-animation-delay: 11s;
-}
-
-.genreBoxIn.d1{
-	-webkit-animation-delay: 0s;
-}
-.genreBoxIn.d2{
-	-webkit-animation-delay: 0.1s;
-}
-.genreBoxIn.d3{
-	-webkit-animation-delay: 0.2s;
-}
-.genreBoxIn.d4{
-	-webkit-animation-delay: 0.3s;
-}
-.genreBoxIn.d5{
-	-webkit-animation-delay: 0.4s;
-}
-.genreBoxIn.d6{
-	-webkit-animation-delay: 0.5s;
-}
-.genreBoxIn.d7{
-	-webkit-animation-delay: 0.6s;
-}
-.genreBoxIn.d8{
-	-webkit-animation-delay: 0.7s;
-}
-.songBoxIn{
-	-webkit-animation-name: zoomIn;
-	-webkit-animation-duration: 0.8s;
-	-webkit-animation-fill-mode: both;
-}
-.songBoxIn.b1{
-	-webkit-animation-delay: 0s;
-}
-.songBoxIn.b2{
-	-webkit-animation-delay: 0.2s;
-}
-.songBoxIn.b3{
-	-webkit-animation-delay: 0.4s;
-}
-
-a:link {
-    text-decoration: none;
-	color: gray;
-}
-
-a:visited {
-    text-decoration: none;
-	color: gray;
-}
-
-a:hover {
-    text-decoration: none;
-	color:white
-}
-
-a:active {
-    text-decoration: none;
-	color: gray;
-}
-
-table.genreTable {
-	table-layout: fixed;
-	width: 1000px;
-	border-spacing: 10;
-	margin-left:auto; 
-	margin-right:auto;
-	}
-td.genreTable, th.genreTable{
-	height: 10px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
-	}
-	
-table.songTable {
-	table-layout: fixed;
-	width: 450px;
-	border-spacing: 10;
-	margin-left:auto; 
-	margin-right:auto;
-	}
-td.songTable, th.songTable{
-	height: 10px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
-	}
-	
-.back{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.songTitle{
-	position: absolute;
-    top: 50px;
-    transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
-	font-size: 250%;
-	-webkit-animation: fadeaway ease-in;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-delay: 5s;
-}
-
-pre{
-  font-family: "Helvetica";
-  font-weight: normal;
-  text-align: left;
-}
-
-scroll-container {
-  display: block;
-  width: 1000px;
-  height: 860px;
-  scroll-behavior: smooth;
-  overflow: hidden;
-  position: absolute;
-  top: -50px;
-  transform: translateY(-50%);
-  left: 0;
-  width: 100%;
-  text-align: center;
-  cursor:wait;
-}
-scroll-page {
+.genreContainer {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.genreButton{
+  width: 50%;
+  height: 25vh;
+  color:black;
+  font-size: 5vw;
+  text-align:center;
+  display: flex;
   justify-content: center;
-  height: 100%; 
-  font-size: 40px; /* Font size for lyrics page */
-  
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  transition: 1000ms;
+}
+.genreButton:hover{
+  transition: 100ms;
+  transform: scale(0.95);
 }
 
-.songTitleScroll{
-	position: absolute;
-    top: 0;
-    width: 100%;
-    text-align: center;
-	font-size: 30px; /* Font size for song name */
-	-webkit-animation: fadeaway ease-in;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-delay: 5s;
+@keyframes animateIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
-.scrollMenu{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-	font-size: 200%;
-	text-align: center;
-	word-spacing: 100px;
+.animateIn{
+  animation:animateIn 1s forwards;
+  opacity:0;
 }
 
-audio { 
-   display:none;
+.animateIn.d1{
+  animation-delay: 200ms;
 }
-
-	
-@-webkit-keyframes fadeaway { from { opacity:1; } to { opacity:0; } }
-@-moz-keyframes fadeaway { from { opacity:1; } to { opacity:0; } }
-@keyframes fadeaway { from { opacity:1; } to { opacity:0; } }
-	
-	
-.blank{
-	position: absolute;
-    top: 30px;
-    transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
-	-webkit-animation: fadeaway ease-in;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-duration: 0.1ms;
-	-webkit-animation-delay: 0ms;
+.animateIn.d2{
+  animation-delay: 300ms;
+}
+.animateIn.d3{
+  animation-delay: 400ms;
+}
+.animateIn.d4{
+  animation-delay: 500ms;
+}
+.animateIn.d5{
+  animation-delay: 600ms;
+}
+.animateIn.d6{
+  animation-delay: 700ms;
+}
+.animateIn.d7{
+  animation-delay: 800ms;
+}
+.animateIn.d8{
+  animation-delay: 900ms;
 }
