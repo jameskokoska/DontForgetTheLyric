@@ -4,26 +4,36 @@
 		<title>Song Page</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
-	<body>
+	<body class="bodyAnimated">
 
 		<script src="data.js"></script>
 		
-		<div class="genreContainer" id="genreBoxes"></div>
+		<div class="titleContainer" id="title"></div>
+		<div class="lyricsContainer" id="lyrics"></div>
+		<div class="playbackContainer" id="playback"></div>
 		<script>
-			myFunction(genreSongs1);
+			readData(genreSongs1);
 			
-			function myFunction(arr) {
+			function readData(arr) {
 				var out = "";
-				var i;
-				for(i = 0; i < arr.length; i++) {
-					out += '<a href="/song1' + (i+1) + '.html" class="button songButton animateIn d' + i + '" style="background-color: ' + arr[i].color + '">';
-					out+= arr[i].nameHidden;
-					out+='</a> ';
-				}
-				document.getElementById("genreBoxes").innerHTML = out;
+				out+= arr[0].lyrics;
+				document.getElementById("lyrics").innerHTML = out;
+				var title = "";
+				title+= arr[0].name;
+				document.getElementById("title").innerHTML = title;
+				var audio = document.createElement("audio");
+				audio.src = arr[0].file;
+				audio.addEventListener("canplaythrough", function () {
+						audio.play();
+						setTimeout(function(){
+							audio.pause();
+						},
+						(arr[0].playFor*1000));
+					}, 
+				false);
 			}
 		</script>
-		
+		<a href="indexDefault.html" class="backArrow"><img src="assets/back.png" width="5%"/></a>
 		
 	</body>
 </html>

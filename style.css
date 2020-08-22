@@ -1,10 +1,3 @@
-/*
-~~~~~~~~~~~~~~~~~~INSTRUCTIONS~~~~~~~~~~~~~~~~~~
-Do not touch this file
-~~~~~~~~~~~~~~~~~~~~~NOTES~~~~~~~~~~~~~~~~~~~~~~
-Cascading styles sheet for the application, credit given with website links when outside resources used
-*/
-
 a{
   text-decoration: none;
 }
@@ -13,6 +6,50 @@ body {
 	font-family: Helvetica; 
   margin: 0;
   background-color: black;
+}
+
+audio {
+  display:none;
+}
+
+.bodyAnimated{
+  background: linear-gradient(45deg, #644892, #ad4b90, #d15b76, #bd6d50, #b38a3e, #b3b34e);
+	background-size: 450% 450%;
+	animation: animateGradient 30s ease infinite;
+}
+
+.lyricsContainer {
+  animation: animateIn 500ms forwards;
+  animation-delay: 1.8s;
+  opacity:0;
+  padding: 3vw;
+  color:white;
+  font-size: 5vw;
+  text-align: center;
+  line-height: 1.1;
+  user-select: none;
+}
+
+.titleContainer{
+  animation: titleIn 2s forwards;
+  font-weight: bold;
+  color:white;
+  font-size: 5.5vw;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.backArrow {
+  padding:10px;
+  filter: brightness(100);
+  transition: 100ms;
+  opacity: 1;
+}
+.backArrow:hover {
+  opacity: 0.5;
 }
 
 .genreContainer {
@@ -46,12 +83,40 @@ body {
   transform: scale(0.95);
 }
 
+
+@keyframes animateGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @keyframes animateIn{
   0%{
     opacity: 0;
   }
   100%{
     opacity: 1;
+  }
+}
+
+@keyframes titleIn{
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
   }
 }
 
