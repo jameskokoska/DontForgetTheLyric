@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Don't Forget The Lyrics</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<script src="data.js"></script>
+		
+		<div class="genreContainer" id="genreBoxes"></div>
+		<script>
+			readData(genreArray);
+			
+			function readData(arr) {
+				var out = "";
+				var i;
+				for(i = 0; i < arr.length; i++) {
+					out += '<a href="/genre' + (i+1) + '.html" class="button genreButton animateIn d' + i + '" style="background-color: ' + arr[i].color + '">';
+					out+= arr[i].genre;
+					out+='</a> ';
+				}
+				document.getElementById("genreBoxes").innerHTML = out;
+			}
+		</script>
+		</div>
+		
+	</body>
+</html>
