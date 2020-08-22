@@ -20,7 +20,8 @@
 * Define ```name``` - the actual name of the song, displayed before the lyrics
 * Define ```file``` - the location of the music file (by default it follows the format of ```assets/song[genre number][song number].mp3```) (therefore put songs in the assets folder with the respective name (e.g. for the first song of the first genre it would be located in ```assets/song11.mp3```))
 * Define ```playFor``` - how long the song should play before it stops (to not reveal the missing lyric), this is measured in seconds
-* and ```lyrics``` - the lyrics to be displayed, each line should be separated with ```<br/>\<br/>\``` as seen in the provided example ```data.js```
+* Define ```lyrics``` - the lyrics to be displayed, each line should be separated with ```<br/>\<br/>\``` as seen in the provided example ```data.js```
+* Define ```missingLyrics``` - the missing lyrics to be displayed further down the page (so it is hidden until revealed)
 
 ## Preview
 ![Menu](/Preview/Menu.png)

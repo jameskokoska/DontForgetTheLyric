@@ -73,6 +73,8 @@ var genreSongs1 = [
         line 5 of lyrics <br/>\<br/>\
         line 6 of lyrics <br/>\<br/>\
         ",
+        "missingLyrics":  ""
+
     },
     {
         "nameHidden": "Song 3",
@@ -81,6 +83,7 @@ var genreSongs1 = [
         "file": "assets/song13.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
 
@@ -92,6 +95,7 @@ var genreSongs2 = [
         "file": "assets/song21.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 2",
@@ -100,6 +104,7 @@ var genreSongs2 = [
         "file": "assets/song22.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 3",
@@ -108,6 +113,7 @@ var genreSongs2 = [
         "file": "assets/song23.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
 
@@ -119,6 +125,7 @@ var genreSongs3 = [
         "file": "assets/song31.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 2",
@@ -127,6 +134,7 @@ var genreSongs3 = [
         "file": "assets/song32.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 3",
@@ -135,6 +143,7 @@ var genreSongs3 = [
         "file": "assets/song33.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
 
@@ -146,6 +155,7 @@ var genreSongs4 = [
         "file": "assets/song41.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 2",
@@ -154,6 +164,7 @@ var genreSongs4 = [
         "file": "assets/song42.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 3",
@@ -162,6 +173,7 @@ var genreSongs4 = [
         "file": "assets/song43.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
 
@@ -173,6 +185,7 @@ var genreSongs5 = [
         "file": "assets/song51.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 2",
@@ -181,6 +194,7 @@ var genreSongs5 = [
         "file": "assets/song52.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 3",
@@ -189,6 +203,7 @@ var genreSongs5 = [
         "file": "assets/song53.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
 
@@ -200,6 +215,7 @@ var genreSongs6 = [
         "file": "assets/song61.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 2",
@@ -208,6 +224,7 @@ var genreSongs6 = [
         "file": "assets/song62.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 3",
@@ -216,6 +233,7 @@ var genreSongs6 = [
         "file": "assets/song63.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
 
@@ -227,6 +245,7 @@ var genreSongs7 = [
         "file": "assets/song71.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 2",
@@ -235,6 +254,7 @@ var genreSongs7 = [
         "file": "assets/song72.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 3",
@@ -243,6 +263,7 @@ var genreSongs7 = [
         "file": "assets/song73.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
 
@@ -254,6 +275,7 @@ var genreSongs8 = [
         "file": "assets/song81.mp3",
         "playFor" : "10", 
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 2",
@@ -261,6 +283,7 @@ var genreSongs8 = [
         "name":"Song 2 Name",
         "file": "assets/song82.mp3",
         "lyrics": "",
+        "missingLyrics":  ""
     },
     {
         "nameHidden": "Song 3",
@@ -268,5 +291,6 @@ var genreSongs8 = [
         "name":"Song 3 Name",
         "file": "assets/song83.mp3",
         "lyrics": "",
+        "missingLyrics":  ""
     },
 ];
