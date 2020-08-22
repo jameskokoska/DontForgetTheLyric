@@ -30,6 +30,11 @@ audio {
   user-select: none;
 }
 
+.missingLyricsContainer {
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+}
+
 .titleContainer{
   animation: titleIn 2s forwards;
   font-weight: bold;

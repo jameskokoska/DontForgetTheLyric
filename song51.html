@@ -10,6 +10,7 @@
 		
 		<div class="titleContainer" id="title"></div>
 		<div class="lyricsContainer" id="lyrics"></div>
+		<div class="missingLyricsContainer lyricsContainer" id="missingLyrics"></div>
 		<div class="playbackContainer" id="playback"></div>
 		<script>
 			readData(genreSongs5);
@@ -31,6 +32,9 @@
 						(arr[0].playFor*1000));
 					}, 
 				false);
+				var missingLyric = "";
+				missingLyric += arr[0].missingLyrics;
+				document.getElementById("missingLyrics").innerHTML = missingLyric;
 			}
 		</script>
 		<a href="index.html" class="backArrow"><img src="assets/back.png" width="5%"/></a>
